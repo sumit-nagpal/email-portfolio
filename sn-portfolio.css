@@ -1296,11 +1296,9 @@ img {
     }
     .testing-grid{
         grid-template-columns: 1fr;
-        gap: 0;
     }
     .portfolio-listing{
         grid-template-columns: 1fr;
-        gap: 0;
     }
 }
 
