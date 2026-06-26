@@ -62,7 +62,7 @@ document.getElementById('faqCollapseAll').addEventListener('click', () => {
 
 /* ===== Scroll Reveal ===== */
 /* 3-second fallback for iframe previews where IntersectionObserver may not fire */
-const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const prefersReduced = globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReduced) {
     const reveals = document.querySelectorAll('.reveal');
@@ -86,28 +86,31 @@ if (!prefersReduced) {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
 }
 
+/* ===== Back To Top ===== */
 const btn = document.getElementById("backToTop");
+if (btn) {
 
-// Show button on scroll
-window.onscroll = function () {
-if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    btn.style.display = "flex";
-} else {
-    btn.style.display = "none";
+    globalThis.addEventListener("scroll", () => {
+
+        if (globalThis.scrollY > 200) {
+            btn.style.display = "flex";
+        } else {
+            btn.style.display = "none";
+        }
+
+    });
+    btn.addEventListener("click", () => {
+
+        btn.classList.add("animate");
+
+        globalThis.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+        setTimeout(() => {
+            btn.classList.remove("animate");
+        }, 600);
+
+    });
 }
-};
-
-// Scroll to top + animation
-btn.addEventListener("click", function () {
-btn.classList.add("animate");
-
-window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-});
-
-// Remove animation class after animation ends
-setTimeout(() => {
-    btn.classList.remove("animate");
-}, 600);
-});
