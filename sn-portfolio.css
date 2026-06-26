@@ -163,20 +163,14 @@ img {
 }
 
 .nav-logo-mark {
-    width: 28px;
-    height: 28px;
+    width: 42px;
+    height: 32px;
     background: var(--accent);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.nav-logo-mark svg {
-    width: 16px;
-    height: 16px;
-}
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -819,9 +813,17 @@ img {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
-
+.footer-links li{
+    list-style: square;
+    color: var(--text-dim);
+    list-style-position: inside;
+}
+.footer-links li::marker {
+    color: var(--accent);
+    margin-right: 0px;
+}
 .footer-links a {
     font-size: 14px;
     color: var(--text-dim);
