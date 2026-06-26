@@ -16,7 +16,7 @@
     --text-dim:     #999999;
     --accent:       #00ff82;
     --accent-bg:    #00ff8210;
-    --accent-hover: #c2eb00;
+    --accent-hover: #16d578;
     --border:       #E5E5E5;
     --border-light: #EEEEEE;
     --white:        #FFFFFF;
@@ -484,7 +484,7 @@ img {
     font-weight: 800;
     letter-spacing: -0.04em;
     line-height: 1.1;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -834,9 +834,6 @@ img {
 }
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-top: 32px;
     border-top: 1px solid var(--border);
 }
@@ -1110,6 +1107,30 @@ img {
     transform: translateY(-2px);
     color: var(--white);
     border-color: rgba(255,255,255,0.3);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+/* Hover effect */
+#backToTop:hover {
+  background: var(--accent-hover);
+  transform: scale(1.1);
 }
 
 .common-section{

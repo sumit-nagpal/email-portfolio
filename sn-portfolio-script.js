@@ -85,3 +85,29 @@ if (!prefersReduced) {
 } else {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
 }
+
+const btn = document.getElementById("backToTop");
+
+// Show button on scroll
+window.onscroll = function () {
+if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "flex";
+} else {
+    btn.style.display = "none";
+}
+};
+
+// Scroll to top + animation
+btn.addEventListener("click", function () {
+btn.classList.add("animate");
+
+window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+
+// Remove animation class after animation ends
+setTimeout(() => {
+    btn.classList.remove("animate");
+}, 600);
+});
