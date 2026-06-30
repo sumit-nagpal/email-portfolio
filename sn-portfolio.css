@@ -1113,8 +1113,8 @@ img {
 
 #backToTop {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 80px;
+  right: 20px;
   z-index: 999;
   background: var(--accent);
   color: #000;
@@ -1339,10 +1339,10 @@ img {
 
 .whatsapp-btn{
     position: fixed;
-    right: 25px;
+    right: 20px;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: #25D366;
     border-radius: 50%;
     display: flex;
