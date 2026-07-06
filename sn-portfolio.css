@@ -10,12 +10,12 @@
 :root {
     /* Silver & Acid Palette */
     --bg:           #FAFAFA;
-    --surface:      #F0F0F0;
+    --surface:      #F1F3F4;
     --text:         #111111;
     --text-muted:   #666666;
     --text-dim:     #999999;
     --accent:       #21ff74;
-    --accent-bg:    #21ff7410;
+    --accent-bg:    #E6F4EA;
     --accent-hover: #16d578;
     --border:       #E5E5E5;
     --border-light: #EEEEEE;
@@ -63,7 +63,6 @@ img {
 /* ===== Machined Silver Card System ===== */
 .card {
     background: var(--surface);
-    border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: inset 0 1px 0 var(--white);
     transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
@@ -913,7 +912,6 @@ img {
 
 .faq-item {
     background: var(--surface);
-    border: 1px solid var(--border);
     border-radius: 14px;
     box-shadow: inset 0 1px 0 var(--white);
     overflow: hidden;
@@ -1164,7 +1162,7 @@ img {
     background-color: var(--accent);
 }
 .testing-category li svg path{
-    color: var(--white);
+    color: var(--text);
 }
 
 /* portfolio */
