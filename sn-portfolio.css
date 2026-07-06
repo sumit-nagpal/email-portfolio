@@ -781,7 +781,6 @@ img {
 /* ===== SECTION 7: FOOTER ===== */
 .footer {
     padding: 80px 0 40px;
-    border-top: 1px solid var(--border);
 }
 
 .footer-grid {
