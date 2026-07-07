@@ -1308,7 +1308,6 @@ img {
     }
     .compare{
         grid-template-columns: 1fr;
-        gap: 0;
     }
 
     .metric-divider {
