@@ -309,7 +309,6 @@ img {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 /* Dashboard Mockup */
@@ -595,6 +594,42 @@ img {
 }
 
 .mini-bar.highlight { background: var(--accent); }
+
+/* --------- Scrolling tech marquee --------- */
+.tech-marquee {
+    padding: 20px 0;
+    overflow: hidden;
+}
+.marquee-track {
+    display: flex;
+    gap: 3rem;
+    animation: marqueeScroll 15s linear infinite;
+    width: max-content;
+}
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
+.marquee-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.tech-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
 
 /* Mini pipeline in bento card */
 .mini-pipeline {
