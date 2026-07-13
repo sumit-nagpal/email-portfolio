@@ -187,7 +187,11 @@ img {
 .nav-links a:hover {
     color: var(--text);
 }
-
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 .nav-cta {
     display: flex;
     align-items: center;
@@ -1304,7 +1308,11 @@ img {
     .nav-links { display: none; }
     .nav-cta   { display: none; }
     .nav-toggle { display: flex; }
-
+    .theme-btn{
+        display:flex;
+        margin-left:auto;
+        margin-right:10px;
+    }
     .nav-links.open {
         display: flex;
         flex-direction: column;
@@ -1414,6 +1422,62 @@ img {
 
 .whatsapp-btn:hover{
     transform: scale(1.1);
+}
+
+
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --text: #f3f4f6;
+  --text-muted: #b7bcc6;
+  --text-dim: #8b949e;
+  --border: #30363d;
+  --border-light: #30363d;
+  --white: #1f2937;
+  --accent-bg: #10251a;
+}
+.theme-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+[data-theme="dark"] .nav {
+  background: rgba(13, 17, 23, 0.82);
+}
+[data-theme="dark"] .dashboard-frame {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+[data-theme="dark"] .before-block {
+  background: #2d1d20;
+}
+[data-theme="dark"] .after-block {
+  background: #14251c;
+}
+[data-theme="dark"] .portfolio {
+  background: #111827;
+}
+[data-theme="dark"] .card,
+[data-theme="dark"] .faq-item {
+  background: var(--surface);
+}
+[data-theme="dark"] .bento-card-icon {
+  background: #0f172a;
+}
+[data-theme="dark"] .bento-card-visual {
+  background: #0f172a;
+  border-color: var(--border);
 }
 
 
