@@ -1170,7 +1170,7 @@ img {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.02em;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid var(--border);
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1181,7 +1181,8 @@ img {
 .btn-dark-ghost:hover {
     transform: translateY(-2px);
     color: var(--white);
-    border-color: rgba(255,255,255,0.3);
+    border-color: var(--border);
+    
 }
 
 #backToTop {
@@ -1481,11 +1482,13 @@ img {
 }
 [data-theme="dark"] .btn-acid,
 [data-theme="dark"] .metric-number .metric-highlight,
-[data-theme="dark"] .hero h1 .accent-word
+[data-theme="dark"] .hero h1 .accent-word,
+[data-theme="dark"] .testing-category li svg path
 {
     color: var(--white);
 }
-[data-theme="dark"] .cta-banner h2{
+[data-theme="dark"] .cta-banner h2,
+[data-theme="dark"] .btn-dark-ghost:hover{
     color: var(--text);
 
 }
