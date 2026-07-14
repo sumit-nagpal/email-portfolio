@@ -620,6 +620,7 @@ img {
     color: var(--text-muted);
     white-space: nowrap;
     letter-spacing: 0.02em;
+    border-radius: 8px;
 }
 .marquee-item i {
     color: var(--primary-color);
@@ -1491,4 +1492,7 @@ img {
 [data-theme="dark"] .btn-dark-ghost:hover{
     color: var(--text);
 
+}
+[data-theme="dark"] .marquee-item{
+    background: #888;
 }
