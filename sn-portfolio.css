@@ -1491,28 +1491,18 @@ img {
 .sticky-btn {
   background: #22f566;
   color: #111;
-
   text-decoration: none;
-
   padding: 12px 18px;
   border-radius: 10px;
-
   font-weight: 700;
-
   transition: 0.25s;
 }
 
 .sticky-btn:hover {
   background: #18df58;
 }
-
-.sticky-close {
-  border: none;
-  background: transparent;
-  color: #999;
-  cursor: pointer;
-  font-size: 22px;
-  padding: 0 4px;
+.sticky-btn svg{
+    vertical-align: middle;
 }
 
 @keyframes slideUp {
@@ -1616,6 +1606,6 @@ img {
 
 }
 [data-theme="dark"] .marquee-item{
-    background: #888;
+    background: #bcbcbc;
 }
 
