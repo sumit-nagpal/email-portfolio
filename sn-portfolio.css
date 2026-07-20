@@ -314,6 +314,20 @@ img {
     justify-content: center;
     gap: 16px;
 }
+.trust-section{
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 20px;
+    border:solid 1px var(--border);
+    display: inline-flex;
+    padding: 8px 16px;
+    border-radius: 100px;
+    margin: 30px auto 0;
+}
+.trust-section svg{
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
 /* Dashboard Mockup */
 .hero-dashboard {
@@ -603,6 +617,15 @@ img {
 .tech-marquee {
     padding: 60px 0;
     overflow: hidden;
+}
+.marquee-label{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    text-align: center;
+    margin-bottom: 20px;
 }
 .marquee-track {
     display: flex;
