@@ -115,6 +115,19 @@ if (btn) {
     });
 }
 
+// Sticky CTA
+const sticky = document.querySelector('.sticky-cta');
+sticky.style.display = 'none';
+window.addEventListener('scroll', () => {
+    const trigger = document.body.scrollHeight * 0.4;
+
+    if (window.scrollY > trigger) {
+        sticky.style.display = 'flex';
+    } else {
+        sticky.style.display = 'none';
+    }
+});
+
 // Dark Mode Toggle
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("themeToggle");
