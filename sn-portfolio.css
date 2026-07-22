@@ -449,7 +449,7 @@ img {
 
 .metrics-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -914,13 +914,7 @@ img {
     gap: 10px;
 }
 .footer-links li{
-    list-style: square;
     color: var(--text-dim);
-    list-style-position: inside;
-}
-.footer-links li::marker {
-    color: var(--accent);
-    margin-right: 0px;
 }
 .footer-links a {
     font-size: 14px;
@@ -932,7 +926,12 @@ img {
 .footer-links a:hover {
     color: var(--text-muted);
 }
-
+.footer-links a svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
 .footer-bottom {
     padding-top: 32px;
     border-top: 1px solid var(--border);
@@ -1149,10 +1148,9 @@ img {
 .cta-banner h2 {
     font-size: clamp(32px, 4.5vw, 52px);
     font-weight: 800;
-    letter-spacing: -0.04em;
     line-height: 1.1;
     color: var(--white);
-    max-width: 580px;
+    max-width: 650px;
     margin: 0 auto 16px;
     position: relative;
     z-index: 1;
