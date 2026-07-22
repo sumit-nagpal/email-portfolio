@@ -1603,7 +1603,6 @@ img {
     color: var(--text);
 
 }
-[data-theme="dark"] .marquee-item{
+[data-theme="dark"] .marquee-item, [data-theme="dark"] .faq-icon{
     background: #bcbcbc;
 }
-
