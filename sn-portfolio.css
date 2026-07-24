@@ -455,7 +455,7 @@ img {
 
 .metric-item {
     text-align: center;
-    padding: 48px 24px;
+    padding: 12px 24px;
 }
 
 .metric-number {
@@ -498,7 +498,7 @@ img {
 
 /* ===== SECTION 3: THE ENGINE — BENTO GRID ===== */
 .engine {
-    padding: 0 0 clamp(48px, 6vw, 80px);
+    padding: var(--section-pad) 0;
 }
 
 .section-header {
