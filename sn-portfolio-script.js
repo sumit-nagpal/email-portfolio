@@ -160,3 +160,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 : "🌙";
     }
 });
+
+
+// portfolio filter
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".portfolio-item");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        buttons.forEach(button => button.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+            if (filter === "all") {
+                card.classList.remove("list-hide");
+            } else {
+                if (card.classList.contains(filter)) {
+                    card.classList.remove("list-hide");
+                } else {
+                    card.classList.add("list-hide");
+                }
+            }
+        });
+    });
+});
