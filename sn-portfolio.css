@@ -482,7 +482,7 @@ img {
 }
 
 .metric-desc {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-muted);
     font-weight: 500;
     max-width: 240px;
@@ -1155,7 +1155,6 @@ img {
 .cta-banner p {
     font-size: 16px;
     color: rgba(255,255,255,0.5);
-    max-width: 420px;
     margin: 0 auto 40px;
     line-height: 1.6;
     position: relative;
@@ -1543,7 +1542,7 @@ img {
   .sticky-cta {
     left: 16px;
     right: 16px;
-    bottom: 16px;
+    bottom: 5px;
 
     padding: 12px;
   }
