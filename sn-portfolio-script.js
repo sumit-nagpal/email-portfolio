@@ -163,6 +163,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // portfolio filter
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".portfolio-listing");
+    const items = Array.from(container.children);
+
+    // Shuffle array (Fisher-Yates)
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+    }
+
+    // Append back in shuffled order
+    items.forEach(item => container.appendChild(item));
+});
+
 const buttons = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".portfolio-item");
 

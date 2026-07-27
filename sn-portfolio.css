@@ -1323,6 +1323,7 @@ img {
     box-shadow: inset 0 1px 0 var(--white);
     overflow: hidden;
     position: relative;
+    min-height: 400px;
     max-height: 400px; 
 }
 .portfolio-item img{
@@ -1330,7 +1331,7 @@ img {
     display: block;
     object-fit: cover;
     object-position: top;
-    filter: grayscale(70%);
+    /* filter: grayscale(70%);*/
     transition: 
         transform 6s cubic-bezier(0.22, 1, 0.36, 1),
         filter 0.4s ease;
@@ -1637,7 +1638,8 @@ img {
 [data-theme="dark"] .btn-acid,
 [data-theme="dark"] .metric-number .metric-highlight,
 [data-theme="dark"] .hero h1 .accent-word,
-[data-theme="dark"] .testing-category li svg path
+[data-theme="dark"] .testing-category li svg path, 
+[data-theme="dark"] .filter-btn.active
 {
     color: var(--white);
 }
