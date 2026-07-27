@@ -170,6 +170,25 @@ img {
     align-items: center;
     justify-content: center;
 }
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-name {
+    font-weight: 800;
+    color: var(--text);
+}
+
+.brand-tagline {
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
