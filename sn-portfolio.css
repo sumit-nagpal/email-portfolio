@@ -180,12 +180,11 @@ img {
     font-weight: 800;
     color: var(--text);
 }
-
 .brand-tagline {
     margin-top: 3px;
     font-size: 11px;
     font-weight: 500;
-    color: var(--text-dim);
+    color: var(--text);
     letter-spacing: 0;
 }
 
