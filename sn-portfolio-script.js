@@ -180,21 +180,34 @@ document.addEventListener("DOMContentLoaded", () => {
 const buttons = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".portfolio-item");
 
+function filterCards(filter) {
+    cards.forEach(card => {
+        if (filter === "all" || card.classList.contains(filter)) {
+            card.classList.remove("list-hide");
+        } else {
+            card.classList.add("list-hide");
+        }
+    });
+}
+
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-        buttons.forEach(button => button.classList.remove("active"));
-        btn.classList.add("active");
-        const filter = btn.dataset.filter;
-        cards.forEach(card => {
-            if (filter === "all") {
-                card.classList.remove("list-hide");
-            } else {
-                if (card.classList.contains(filter)) {
-                    card.classList.remove("list-hide");
-                } else {
-                    card.classList.add("list-hide");
-                }
-            }
+
+        // Remove active from all buttons
+        buttons.forEach(button => {
+            button.classList.remove("active");
         });
+
+        // Add active to clicked button
+        btn.classList.add("active");
+
+        // Get selected filter
+        const filter = btn.dataset.filter;
+
+        // Filter cards
+        filterCards(filter);
     });
 });
+
+// Apply Featured filter when page loads
+filterCards("featured");
