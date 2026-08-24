@@ -1872,6 +1872,11 @@ img {
   transition: 0.3s;
   flex-shrink: 0;
 }
+.theme-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
 [data-theme="dark"] .nav {
   background: rgba(13, 17, 23, 0.82);
 }
