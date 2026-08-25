@@ -959,7 +959,7 @@ img {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
     gap: 38px;
     margin-bottom: 64px;
 }
@@ -969,9 +969,8 @@ img {
     color: var(--text-muted);
     line-height: 1.7;
     max-width: 280px;
-    margin-top: 16px;
+    margin: 15px 0;
 }
-
 .footer-col-title {
     font-size: 13px;
     font-weight: 700;
@@ -1038,6 +1037,68 @@ img {
 }
 
 .footer-bottom-links a:hover {
+    color: var(--text);
+}
+.contact-list {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-list li {
+    margin-bottom: 12px;
+}
+.contact-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* Icon Box */
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--accent-bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    background-color:var(--accent);
+    color: var(--text);
+}
+.contact-icon .icon {
+    width: 16px;
+    height: 16px;
+}
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+.contact-label {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+}
+.contact-value {
+    font-size: 14px;
+    color: var(--text-dim);
+    transition: color 0.3s ease;
+}
+.contact-item:hover .contact-value {
     color: var(--text);
 }
 
@@ -1896,7 +1957,7 @@ img {
 [data-theme="dark"] .faq-item {
   background: var(--surface);
 }
-[data-theme="dark"] .bento-card-icon {
+[data-theme="dark"] .bento-card-icon{
   background: #0f172a;
 }
 [data-theme="dark"] .bento-card-visual {
@@ -1907,7 +1968,8 @@ img {
 [data-theme="dark"] .metric-number .metric-highlight,
 [data-theme="dark"] .hero h1 .accent-word,
 [data-theme="dark"] .testing-category li svg path, 
-[data-theme="dark"] .filter-btn.active
+[data-theme="dark"] .filter-btn.active,
+[data-theme="dark"] .contact-item:hover .contact-icon
 {
     color: var(--white);
 }
