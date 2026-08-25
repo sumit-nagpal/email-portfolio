@@ -322,7 +322,7 @@ img {
     font-size: clamp(16px, 1.8vw, 19px);
     color: var(--text-muted);
     max-width: 650px;
-    margin: 0 auto 40px;
+    margin: 0 auto 25px;
     line-height: 1.6;
     font-weight: 400;
 }
