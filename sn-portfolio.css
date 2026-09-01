@@ -414,11 +414,11 @@ img {
 }
 .block-content ul.before-list li {
   border-color: #ff625a;
-  background: url(images/mark.png) no-repeat left 10px center var(--white);
+  background: url(images/red-error-icon.svg) no-repeat left 10px center var(--white);
 }
 .block-content ul.after-list li {
   border-color: #1b571f;
-  background: url(images/tick.png) no-repeat left 10px center var(--white);
+  background: url(images/green-check-icon.svg) no-repeat left 10px center var(--white);
 }
 
 /* About */
