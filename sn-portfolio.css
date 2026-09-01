@@ -1481,7 +1481,7 @@ img {
   left: -16px;
   font-size: 13px;
   font-weight: 700;
-  color: var(--accent);
+  color: #16b65b;
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 0.25s ease, transform 0.25s ease;
