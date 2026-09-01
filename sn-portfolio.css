@@ -1927,7 +1927,15 @@ img {
   border-radius: 50%;
   background: #d7dcd9;
 }
-
+.process-visual-topbar span.first{
+    background: #ff625a;
+}
+.process-visual-topbar span.second{
+  background: #ffbb40;
+}
+.process-visual-topbar span.third{
+  background: #31cb3a;
+}
 .process-visual-body {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
