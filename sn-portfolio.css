@@ -510,7 +510,7 @@ img {
   height: 228px;
   border-radius: 50%;
   border-top: 2px solid #16b65b;
-  border-right: 2px solid #16b65b;
+  border-left: 2px solid #16b65b;
   transform: rotate(-42deg);
 }
 /* Online status */
