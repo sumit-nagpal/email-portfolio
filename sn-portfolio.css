@@ -683,6 +683,9 @@ img {
 .about-contact-item:hover .about-contact-arrow {
   transform: translate(3px, -3px);
 }
+.about-contact-item:hover .about-contact-icon svg.icon{
+  color: #16b65f;
+}
 /* ========================================
    TABLET
 ======================================== */
