@@ -706,7 +706,7 @@ img {
   }
 
   .profile-status {
-    right: 8px;
+    right: 30px;
   }
   .about-contact {
     grid-template-columns: repeat(2, 1fr);
@@ -750,7 +750,6 @@ img {
 
   .profile-status {
     right: calc(50% - 102px);
-    bottom: 6px;
   }
 
   .about-content {
@@ -826,8 +825,8 @@ img {
   }
 
   .profile-status {
-    right: calc(50% - 92px);
-    bottom: 0;
+    right: calc(50% - 75px);
+    bottom: 30px;
   }
 
   .about-title {
