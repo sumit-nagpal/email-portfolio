@@ -1901,7 +1901,6 @@ img {
 .process-visual {
   position: relative;
   max-width: 570px;
-  overflow: hidden;
   border-radius: 24px;
   border: 1px solid var(--border);
   background: radial-gradient(
@@ -1911,6 +1910,7 @@ img {
     ),
     linear-gradient(135deg, #f4f6f5, #e8ecea);
   box-shadow: 0 24px 60px rgba(17, 17, 17, 0.1);
+  overflow: hidden;
 }
 
 .process-visual-topbar {
@@ -2136,6 +2136,141 @@ img {
   color: var(--text-muted);
   font-size: 16px;
   line-height: 1.65;
+}
+.skill {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+    background:var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 10px 25px rgba(30, 50, 45, 0.08);
+    will-change: transform;
+}
+.html-email {
+    top: 40px;
+    left: 40px;
+    animation: float1 5s ease-in-out infinite;
+}
+.responsive {
+    top: 25px;
+    right: 45px;
+    animation: float2 6s ease-in-out infinite;
+    animation-delay: -2s;
+}
+.outlook {
+    top: 150px;
+    right: 5px;
+    animation: float3 4.8s ease-in-out infinite;
+    animation-delay: -1s;
+}
+.dark-mode {
+    bottom: 80px;
+    right: 50px;
+    animation: float4 5.8s ease-in-out infinite;
+    animation-delay: -3s;
+}
+.email-qa {
+    bottom: 25px;
+    left: 125px;
+    animation: float5 5.2s ease-in-out infinite;
+    animation-delay: -1.5s;
+}
+.accessibility {
+    bottom: 180px;
+    left: 5px;
+    animation: float6 4.8s ease-in-out infinite;
+    animation-delay: -2s;
+}
+.cross-client {
+    top: 230px;
+    left: 25px;
+    animation: float7 6s ease-in-out infinite;
+    animation-delay: -3.5s;
+}
+.figma {
+    bottom: 5px;
+    right: 130px;
+    animation: float8 5s ease-in-out infinite;
+    animation-delay: -1.2s;
+}
+@keyframes float1 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-6px, -10px) rotate(-1deg);
+    }
+}
+@keyframes float2 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(7px, -8px) rotate(1deg);
+    }
+}
+@keyframes float3 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -12px);
+    }
+}
+@keyframes float4 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-5px, -9px) rotate(1deg);
+    }
+}
+@keyframes float5 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-7px, -8px);
+    }
+}
+@keyframes float6 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(5px, -11px);
+    }
+}
+@keyframes float7 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-6px, -12px) rotate(-1deg);
+    }
+}
+@keyframes float8 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(7px, -9px) rotate(1deg);
+    }
 }
 /*process*/
 
