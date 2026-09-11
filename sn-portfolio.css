@@ -1039,8 +1039,8 @@ img {
   box-shadow: inset 0 1px 0 var(--white);
 }
 .result-card-icon svg {
-  width: 42px;
-  height: 42px;
+  width: 28px;
+  height: 28px;
   stroke: var(--text);
 }
 .result-card h3 {
@@ -2116,8 +2116,8 @@ img {
   color: var(--text);
 }
 .process-icon svg {
-  width: 42px;
-  height: 42px;
+  width: 28px;
+  height: 28px;
 }
 
 .process-step-copy {
