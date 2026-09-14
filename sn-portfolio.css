@@ -2171,7 +2171,7 @@ img {
     animation-delay: -1s;
 }
 .dark-mode {
-    bottom: 80px;
+    bottom: 110px;
     right: 50px;
     animation: float4 5.8s ease-in-out infinite;
     animation-delay: -3s;
@@ -2196,7 +2196,7 @@ img {
 }
 .figma {
     bottom: 5px;
-    right: 130px;
+    right: 100px;
     animation: float8 5s ease-in-out infinite;
     animation-delay: -1.2s;
 }
