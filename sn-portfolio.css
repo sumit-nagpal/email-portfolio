@@ -2153,6 +2153,11 @@ img {
     box-shadow: 0 10px 25px rgba(30, 50, 45, 0.08);
     will-change: transform;
 }
+.skill svg{
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
 .html-email {
     top: 40px;
     left: 40px;
