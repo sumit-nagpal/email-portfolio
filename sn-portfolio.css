@@ -2002,7 +2002,7 @@ img {
   min-height: 260px;
   overflow: hidden;
   border-radius: 14px;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
@@ -2012,7 +2012,6 @@ img {
   align-items: center;
   gap: 7px;
   padding: 0 13px;
-  border-bottom: 1px solid #edf0ee;
 }
 
 .email-brand-dot {
@@ -2026,7 +2025,7 @@ img {
 .email-nav-line {
   height: 6px;
   border-radius: 6px;
-  background: #d9ddda;
+  background: var(--border);
 }
 
 .email-brand-line {
@@ -2042,12 +2041,12 @@ img {
   flex-direction: column;
   align-items: flex-start;
   padding: 22px;
-  background: #eef5f0;
+  background: var(--accent-bg);
 }
 
 .email-kicker {
   margin-bottom: 8px;
-  color: #4f5b55;
+  color: var(--text-muted);
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -2057,7 +2056,7 @@ img {
   font-size: 28px;
   line-height: 0.95;
   letter-spacing: -0.05em;
-  color: #4f5b55;
+  color: var(--text);
 }
 
 .email-cta {
@@ -2081,7 +2080,7 @@ img {
   display: block;
   height: 55px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #d9dfdb, #f4f5f4);
+  background: var(--border);
 }
 .process-timeline {
   position: relative;
