@@ -2156,7 +2156,7 @@ img {
 .skill svg{
     width: 10px;
     height: 10px;
-    margin-right: 6px;
+    margin-right: 3px;
 }
 .html-email {
     top: 40px;
@@ -2200,8 +2200,8 @@ img {
     animation-delay: -3.5s;
 }
 .figma {
-    bottom: 5px;
-    right: 100px;
+    bottom: 15px;
+    right: 25px;
     animation: float8 5s ease-in-out infinite;
     animation-delay: -1.2s;
 }
