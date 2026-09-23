@@ -1010,14 +1010,13 @@ img {
     width: 100%;
     overflow: hidden;
     padding: 0 0 20px 0;
-    border-radius: 12px;
 }
 .tech-strip-marquee {
     display: flex;
     width: max-content;
     align-items: center;
     gap: 42px;
-    animation: marqueeScroll 15s linear infinite;
+    animation: marqueeScroll 25s linear infinite;
 }
 .tech-item {
     display: flex;
@@ -1129,7 +1128,7 @@ img {
 .marquee-track {
   display: flex;
   gap: 3rem;
-  animation: marqueeScroll 15s linear infinite;
+  animation: marqueeScroll 25s linear infinite;
   width: max-content;
 }
 .marquee-item {
@@ -1154,7 +1153,7 @@ img {
   }
 }
 
-.tech-marquee:hover .marquee-track {
+.tech-marquee:hover .marquee-track, .tech-strip:hover .tech-strip-marquee {
   animation-play-state: paused;
 }
 
