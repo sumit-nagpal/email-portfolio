@@ -1009,9 +1009,8 @@ img {
 .tech-strip {
     width: 100%;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
     border-radius: 12px;
-    margin-top: 20px;
 }
 .tech-strip-marquee {
     display: flex;
