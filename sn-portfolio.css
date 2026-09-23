@@ -1006,7 +1006,36 @@ img {
   padding: 16px;
   min-height: 120px;
 }
-
+.tech-strip {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.tech-strip-marquee {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 42px;
+    animation: marqueeScroll 15s linear infinite;
+}
+.tech-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 6px;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+.tech-item .tech-icon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*result grid*/
 .results {
   padding: var(--section-pad) 0;
