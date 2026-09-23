@@ -1135,7 +1135,7 @@ img {
 .marquee-track {
   display: flex;
   gap: 3rem;
-  animation: marqueeScroll 25s linear infinite;
+  animation: marqueeScroll 15s linear infinite;
   width: max-content;
 }
 .marquee-item {
