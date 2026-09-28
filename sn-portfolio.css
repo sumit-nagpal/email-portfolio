@@ -248,7 +248,7 @@ img {
 
 /* ===== SECTION 1: HERO ===== */
 .hero {
-  padding-top: 160px;
+  padding-top: 130px;
   padding-bottom: 0;
   text-align: center;
   position: relative;
@@ -284,7 +284,7 @@ img {
   }
 }
 .hero h1 {
-  font-size: clamp(42px, 6vw, 76px);
+  font-size: clamp(42px, 6vw, 73px);
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.045em;
