@@ -289,7 +289,7 @@ img {
   line-height: 1.2;
   letter-spacing: -0.045em;
   max-width: 900px;
-  margin: 0 auto 24px;
+  margin: 0 auto 30px;
 }
 .hero h1 .accent-word {
   color: var(--text);
