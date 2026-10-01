@@ -1041,6 +1041,46 @@ img {
     align-items: center;
     justify-content: center;
 }
+.hire-me {
+    background: linear-gradient(0deg,hsla(0,0%,100%,.5),hsla(0,0%,100%,.5)),linear-gradient(90deg,#dff69b,#95e79b 50%,#a9f9b2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:12px;
+    padding: 20px 28px;
+    border-radius: 16px;
+    margin: 40px 0 0;
+}
+.hire-content {
+    flex: 1;
+    margin-left: 40px;
+    color: #333333;
+}
+.hire-content h2{
+  font-size: 16px;
+}
+.hire-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: #ffffff;
+    color: #108a00;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hire-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0px #333333;
+}
 /*result grid*/
 .results {
   padding: var(--section-pad) 0;
@@ -2373,65 +2413,6 @@ img {
   transform: translateY(calc(-100% + 400px));
   filter: grayscale(0%);
 }
-.portfolio-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 40px 20px;
-  color: var(--white);
-  z-index: 5;
-}
-.email-actions {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    display: none;
-    
-}
-.portfolio-item:hover .portfolio-overlay{
-  background: linear-gradient( to bottom, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.90) 100% );
-}
-.portfolio-item:hover .email-actions {
-    display: flex;
-}
-.email-action {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    border-radius:10px;
-    background: var(--accent-bg);
-    color: var(--text);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    text-decoration: none;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-.email-action:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.16);
-}
-.email-action .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.email-action .icon svg {
-    width: 24px;
-    height: 24px;
-    color: var(--text);
-}
-
 /* ===== SCROLL REVEAL ===== */
 .reveal {
   opacity: 0;
