@@ -14,7 +14,7 @@
   --text-muted: #666666;
   --text-dim: #999999;
   --accent: #21ff74;
-  --accent-bg: #e6f4ea;
+  --accent-bg: #ecfaf0;
   --accent-hover: #16d578;
   --border: #e5e5e5;
   --border-light: #eeeeee;
@@ -1106,7 +1106,7 @@ img {
   height: 56px;
   background: var(--accent-bg);
   border-radius: 10px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(34, 245, 102, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1600,7 +1600,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 10px;
   background: linear-gradient(
     135deg,
     rgba(34, 245, 102, 0.12),
