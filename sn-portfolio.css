@@ -2727,6 +2727,7 @@ img {
 }
 .sticky-btn svg {
   vertical-align: middle;
+  margin-right: 5px;
 }
 
 @keyframes slideUp {
