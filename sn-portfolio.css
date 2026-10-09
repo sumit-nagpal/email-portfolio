@@ -48,6 +48,8 @@ img {
   max-width: 100%;
   /* display: block; */
 }
+.mt-10{margin-top:10px}
+.mt-20{margin-top:20px}
 .container {
   max-width: var(--container);
   margin: 0 auto;
@@ -1049,11 +1051,13 @@ img {
     gap:12px;
     padding: 20px 28px;
     border-radius: 16px;
-    margin: 40px 0 0;
+    margin: 20px 0 0;
+}
+.hire-icon{
+  margin-right: 40px;
 }
 .hire-content {
     flex: 1;
-    margin-left: 40px;
     color: #333333;
 }
 .hire-content h2{
