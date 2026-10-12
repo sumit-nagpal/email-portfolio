@@ -1058,7 +1058,7 @@ img {
 }
 .hire-content {
     flex: 1;
-    color: #333333;
+    color: var(--text);
 }
 .hire-content h2{
   font-size: 16px;
@@ -2840,7 +2840,8 @@ img {
   background: #bcbcbc;
 }
 
-[data-theme="dark"] .about-card {
+[data-theme="dark"] .about-card,
+[data-theme="dark"] .hire-me {
   background: radial-gradient(
       circle at 10% 60%,
       rgba(33, 255, 116, 0.08),
