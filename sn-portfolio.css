@@ -842,6 +842,58 @@ img {
     min-height: 54px;
   }
 }
+.certification-section {
+  margin-top: 40px;
+}
+.cert-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.cert-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cert-card {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(108, 72, 217, 0.12);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.cert-preview {
+  width: 100%;
+  aspect-ratio: 5 / 2;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface);
+  margin-bottom: 20px;
+}
+.cert-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cert-content h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.cert-issuer {
+  margin: 0 0 10px;
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 /* ===== SECTION 2: SPEED METRICS ===== */
 .metrics {
@@ -2510,7 +2562,8 @@ img {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .bento-grid,
-  .result-grid {
+  .result-grid,
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 
